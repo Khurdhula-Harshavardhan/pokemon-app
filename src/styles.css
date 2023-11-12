@@ -1,0 +1,225 @@
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+
+#searchbar {
+  flex-grow: 1;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+#search-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.pokemon-card {
+  width: 200px;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  margin: 20px;
+  display: inline-block;
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  animation: spin 2s linear;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  cursor: pointer;
+}
+
+.img {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-items: center;
+  animation: spin 2s linear;
+}
+
+
+/*... other styles ...*/
+
+/* Header styles */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 20px; /* spacing after header */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust to preferred size */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px auto; /* Add top/bottom spacing and center horizontally */
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+
+#searchbar {
+  flex-grow: 1;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Main Heading */
+h2 {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+  margin-top: 20px; /* spacing before footer */
+}
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Add additional styles for your logout button and username display as needed */
+
+/* Add additional styles for your logout button and username display as needed */
